@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#top{
+			background-color: pink;
+			width: 500px;
+			height: 250px;
+		}
+		.tren{
+			background-color: greenyellow;
+			color: blue;
+			width: 100%;
+			height: 20%;
+			text-align: center;
+			border: 2px solid black;
+		}
+		.duoi{
+			background-color: orange;
+			width: 100%;
+			height: 79%;
+			text-align: center;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<div class="tren">
+			<h3>Tính Tổng a,b</h3>
+		</div>
+		<div class="duoi">
+			<button type="button" onclick="Nhapa()">Nhap a</button>
+			<p>+</p>
+			<button type="button" onclick="Nhapb()">Nhap b</button>
+			<p>=</p>
+			<button type="button" onclick="tinhTong()">Ket qua</button>
+			</div>
+			<script type="text/javascript">
+				var a,b,sum
+				function Nhapa() {
+					a = parseFloat(prompt('Nhap a'))
+					console.log(a)
+				}
+				function Nhapb() {
+					b = parseFloat(prompt('Nhap b'))
+					console.log(b)
+				}
+				function tinhTong() {
+					sum = a + b
+					alert('Tong = ' + sum)
+				}
+			</script>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+        var n = prompt('nhap so luong sinh vien:', 0)
+        var studentlist = []
+        for (var i = 0; i < n; i++) {
+            std = {
+                "fullname":"nguyen van " + i,
+                "age":18 + i,
+                "address":"Ha Noi",
+                "email":"a[i]@gmail.com " + i,
+                "phone":"0123456789 > " + i,
+            }
+            studentlist.push(std)
+        }
+        console.log(studentlist)
+        for (var i = 0; i<studentlist.length; i++) {
+            document.write(`<p>ten: ${studentlist[i].fullname}, tuoi: ${studentlist[i].age}, dia chi: ${studentlist[i].address},email: ${studentlist[i].email}, sdt: ${studentlist[i].phone}</p>`)
+        }
+
+	</script>
+</body>
+</html>
