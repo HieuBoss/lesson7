@@ -14,14 +14,14 @@
                 "fullname":"nguyen van " + i,
                 "age":18 + i,
                 "address":"Ha Noi",
-                "email":"a[i]@gmail.com " + i,
-                "phone":"0123456789 > " + i,
+                "email":"a[i]@gmail.com ",
+                "phone":"012*****9" + i,
             }
             studentlist.push(std)
         }
         console.log(studentlist)
         for (var i = 0; i<studentlist.length; i++) {
-            document.write(`<p>ten: ${studentlist[i].fullname}, tuoi: ${studentlist[i].age}, dia chi: ${studentlist[i].address},email: ${studentlist[i].email}, sdt: ${studentlist[i].phone}</p>`)
+            document.write(`<p>ten: ${studentlist[i].fullname}, tuoi: ${studentlist[i].age},email: ${studentlist[i].email}, sdt: ${studentlist[i].phone}, dia chi: ${studentlist[i].address}.</p>`)
         }
 
 	</script>
